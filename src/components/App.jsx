@@ -21,8 +21,6 @@ export class App extends Component {
     this.setState({ contacts: parsedContacts });
   }
 
-  // trololo
-
   componentDidUpdate(prevProps, prevState) {
     if (this.state.contacts.length !== prevState.contacts.length) {
       const stringifiedContacts = JSON.stringify(this.state.contacts);
